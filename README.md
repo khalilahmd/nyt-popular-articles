@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# NY Times Most Popular Articles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This project is a simple **React** web application that fetches and displays the most popular articles from the **NY Times API**. The articles are shown in a clean, user-friendly layout, and users can click on an article to see more details. The project also includes **unit tests**, **end-to-end tests with Cypress**, and **code quality checks** using **ESLint** and **SonarQube** (optional).
 
-In the project directory, you can run:
+### Key Features:
 
-### `npm start`
+1. **Fetch Most Popular Articles** from the **NY Times API**.
+2. **Display Articles**: Shows titles, abstracts, and links for each article.
+3. **Responsive Design**: Ensures the app works on both desktop and mobile devices.
+4. **Unit Tests**: Written using **Jest** and **React Testing Library**.
+5. **End-to-End Tests**: Conducted using **Cypress** for full integration testing.
+6. **Code Quality**: Ensured through **ESLint**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation and Running the Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- **Node.js** (version 14.x or later)
+- **npm** (Node package manager)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps to Run the Project
 
-### `npm run build`
+1. **Clone the Repository**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - First, clone the repository to your local machine:
+     ```bash
+     git clone https://github.com/khalilahmd/nyt-popular-articles.git
+     cd nyt-popular-articles
+     ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - Install all the required dependencies by running:
+     ```bash
+     npm install --legacy-peer-deps
+     ```
 
-### `npm run eject`
+3. **Run the Development Server**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Start the development server to view the app in your browser:
+     ```bash
+     npm start
+     ```
+   - The app will be accessible at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Run Unit Tests**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Unit tests are written using **Jest** and **React Testing Library**. Run the tests with:
+     ```bash
+     npm test
+     ```
+   - This will run the tests and display the results in the terminal.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Run End-to-End Tests with Cypress**:
 
-## Learn More
+   - To test the app’s full functionality, use **Cypress** for end-to-end tests:
+     ```bash
+     npx cypress open
+     ```
+   - This will open the Cypress test runner in your browser. You can then run the tests interactively.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. **Code Quality and Linting**:
+   - The project uses **ESLint** to ensure the code quality and **Prettier** for formatting.
+     - To check code quality with ESLint:
+       ```bash
+       npm run lint
+       ```
+     - To format the code with Prettier:
+       ```bash
+       npm run format
+       ```
